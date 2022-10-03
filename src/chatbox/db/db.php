@@ -1,5 +1,5 @@
 <?php
-$con=mysqli_connect("localhost","root","","chatbox");
+$con=mysqli_connect("mysql","php","php","ShiyunChat");
 		// Check connection
 		if (mysqli_connect_errno())
 		  {
