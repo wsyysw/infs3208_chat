@@ -6,10 +6,10 @@ services:
         image: mariadb:latest
         restart: always
         volumes:
-          - ./src/s46428134/db/DDL.sql:/docker-entrypoint-initdb.d/DDL.sql
+          - ./src/chatbox/DATABASE/DDL.sql:/docker-entrypoint-initdb.d/DDL.sql
         environment:
           MYSQL_ROOT_PASSWORD: MyDBRoot123
-          MYSQL_DATABASE: ShiyunFloral
+          MYSQL_DATABASE: ShiyunChat
           MYSQL_USER: php
           MYSQL_PASSWORD: php
         networks:
