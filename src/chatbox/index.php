@@ -10,10 +10,10 @@
 	</div>
     
 	<div class="main">
-	<?php
-            session_start();
-                if(!isset($_SESSION['username'])){
-        ?>
+		<?php
+            		session_start();
+                		if(!isset($_SESSION['username'])){
+        	?>
 	<form name="form2" method="post" action="login.php">
 		<?php 
             if(isset($_GET['message'])){ 
