@@ -1,4 +1,7 @@
-session_start();
+<?php
+	session_start();
+		if(!isset($_SESSION['username'])){
+?>
 <html>
 <head>
 <link href="css/reset.css" rel="stylesheet" type="text/css">
@@ -10,10 +13,7 @@ session_start();
 	</div>
     
 	<div class="main">
-		<?php
-            		
-                		if(!isset($_SESSION['username'])){
-        	?>
+		
 	<form name="form2" method="post" action="login.php">
 		<?php 
             if(isset($_GET['message'])){ 
